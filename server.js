@@ -4,6 +4,22 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
+var articleone= {
+    title:'ARTICLE ONE-BY GOUTHAMAN',
+    heading:'ARTICLE ONE',
+    date:' OCT 22,2016'
+    content:`<p>
+             this is basically a useless para for the coding i practisce
+         </p>
+         <p>
+             blah blah blah
+         </p>
+         <p>
+             thank you! for reading this useless code.thank you! for reading this useless code.thank you! for reading this useless code.
+             thank you! for reading this useless code
+         </p>`
+         
+   };
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
