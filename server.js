@@ -83,7 +83,7 @@ var htmltemplate=`
   </div>   
  </body>
 </html>`;
-return htmlTemplate;
+return htmltemplate;
 }
 
 
