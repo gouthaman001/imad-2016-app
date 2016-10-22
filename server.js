@@ -64,7 +64,7 @@ var htmltemplate=`
 <!doctype html>
     <head>
         <TITLE>
-            $(title)
+            ${title}
         </TITLE>
     <link href="/ui/style.css" rel="stylesheet" />
     </head>
@@ -72,13 +72,13 @@ var htmltemplate=`
    <div class="box">
      <hr/>
      <h3>
-        $(heading)
+        ${heading}
      </h3>
      <DIV>
-         $(date)
+         ${date}
      </DIV>
      <div>
-         $(content)
+         ${content}
      </div>
   </div>   
  </body>
