@@ -11,14 +11,14 @@ app.get('/', function (req, res) {
 
 
 app.get('/article-one',function(req,res){
-    res.send("article one is asked and you will never be able to get it even in your dreams")
-}
+    res.send("article one is asked and you will never be able to get it even in your dreams");
+});
 app.get('/article-two',function(req,res){
-    res.send("article two  is asked and still no luck buddy")
-}
+    res.send("article two  is asked and still no luck buddy");
+});
 app.get('/article-three',function(req,res){
-    res.send("article three is asked but where the hell is it??")
-}
+    res.send("article three is asked but where the hell is it??");
+});
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
