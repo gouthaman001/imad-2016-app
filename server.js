@@ -22,6 +22,39 @@ var articleone=
          </p>`
          
    };
+function createTemplate (data){
+    var title=data.title;
+    var heading=data.heading;
+    var date=data.date;
+    var content=data.content;
+
+var htmltemplate=`
+<html>
+    <head>
+        <TITLE>
+            $(title)
+        </TITLE>
+    <link href="/ui/style.css" rel="stylesheet" />
+    </head>
+ <body>
+   <div class="box">
+     <hr/>
+     <h3>
+        $(heading)
+     </h3>
+     <DIV>
+         $(date)
+     </DIV>
+     <div>
+         $(content)
+     </div>
+  </div>   
+ </body>
+</html>`;
+return htmlTemplate;
+}
+
+
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
@@ -29,7 +62,7 @@ app.get('/', function (req, res) {
 
 
 app.get('/article-one',function(req,res){
-    res.sendFile(path.join(__dirname, 'article-one.html'));
+    res.send(createTemplate(articleone));
 });
 app.get('/article-two',function(req,res){
      res.sendFile(path.join(__dirname,'ui', 'article-two.html'));
