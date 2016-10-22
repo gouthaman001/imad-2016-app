@@ -4,10 +4,12 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var articleone= {
+var articleone= 
+
+  {
     title:'ARTICLE ONE-BY GOUTHAMAN',
     heading:'ARTICLE ONE',
-    date:' OCT 22,2016'
+    date:' OCT 22,2016',
     content:`<p>
              this is basically a useless para for the coding i practisce
          </p>
